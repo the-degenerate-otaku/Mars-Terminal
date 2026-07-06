@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MARS TERMINAL // UPLINK</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="terminal">
+      <!-- HEADER: mission clock + status + refresh -->
+      <header class="term-header">
+        <span id="mission-clock">--:--:--</span>
+        <span id="status">STATUS: STANDBY</span>
+        <button id="refresh-btn">↻ REFRESH TRANSMISSION</button>
+      </header>
+
+      <!-- MAIN: rover photo viewport -->
+      <main class="viewport">
+        <img id="rover-photo" src="" alt="Rover transmission" hidden />
+        <div id="viewport-msg">AWAITING UPLINK...</div>
+      </main>
+
+      <!-- FOOTER: camera/sol metadata -->
+      <footer class="term-footer">
+        <span id="camera-info">CAM: ---</span>
+        <span id="sol-info">SOL: ---</span>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
