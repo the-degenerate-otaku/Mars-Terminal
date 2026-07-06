@@ -22,7 +22,7 @@ setInterval(updateClock, 1000);
 
 
 const NASA_ENDPOINT =
-    'https://mars-photos.herokuapp.com/api/v1/rovers/curiosity/latest_photos';
+    'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/latest_photos?api_key=hvT3UZcsMwv2t4ofU0RRawteGJydYTSyDnRojdm0';
 
 const photoEl = document.getElementById('rover-photo');
 const msgEl = document.getElementById('viewport-msg');
